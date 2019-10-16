@@ -19,9 +19,18 @@ function hideQuestions() {
   $("#question8").hide();
 }
 
+function stop() {
+  clearInterval(intervalId);
+  clockRunning = false;
+}
+
 function countdown() {
   timeLeft--;
   $("#timer").text("Time left: " + timeLeft);
+  if (timeLeft === 0) {
+    stop();
+    $("#timer").text("Times up!");
+  }
 }
 
 function start() {
