@@ -1,0 +1,16 @@
+body {
+  background-image: url(../images/earthcrisis.jpg);
+  width: 960px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background: rgb(
+    204,
+    204,
+    204
+  ); /* Fallback for older browsers without RGBA-support */
+  background: rgba(204, 204, 204, 0.5);
+  /*link to resource- https://stackoverflow.com/questions/15449280/html-css-text-background-transparent-but-text-not*/
+}
